@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --background-dark: #121212;
+    --box-bg: #1e1e1e;
+    --primary-color: #4caf50;
+    --secondary-color: #2196f3;
+    --danger-color: #e74c3c;
+    --text-light: #ffffff;
+    --border-color: #333;
+}
+
+body {
+    background-color: #1b1b1b;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    transition: background 0.5s;
+}
+
+/* Title */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Theme Switch */
+.theme-switch {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.theme-switch:hover {
+    background: #666;
+}
+
+/* Calculator Box */
+.calculator {
+    width: 320px;
+    background: #282828;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Display */
+#screen {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-size: 2em;
+    padding: 10px;
+    border: none;
+    background: #3c3c3c;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Button Grid */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #444;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #666;
+}
+
+/* Special Buttons */
+.special {
+    background: #e74c3c;
+}
+.special:hover {
+    background: #c0392b;
+}
+
+/* Operator Buttons */
+.operator {
+    background: #3498db;
+}
+.operator:hover {
+    background: #2980b9;
+}
+
+/* Equal Button */
+.equal {
+    background: #2ecc71;
+}
+.equal:hover {
+    background: #27ae60;
+}
+
+/* Memory Buttons */
+.memory {
+    background: #f1c40f;
+}
+.memory:hover {
+    background: #d4ac0d;
+}
+
+/* Dark Mode */
+.dark-theme {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+.dark-theme .calculator {
+    background: #222;
+}
+.dark-theme #screen {
+    background: #333;
+}
+.dark-theme button {
+    background: #555;
+}
+.dark-theme button:hover {
+    background: #777;
+}
